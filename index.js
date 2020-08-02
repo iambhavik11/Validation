@@ -4,8 +4,7 @@ let myPassword = document.querySelector('#passWord');
 let msgError1 = document.querySelector('#span1');
 let msgError2 = document.querySelector('#span2');
 let msgSuccess = document.querySelector('#span3');
-let BodyColor = document.querySelector('body');
-BodyColor.style.background = 'rgb(253, 249, 232)';
+
 
 msgError1.innerHTML = '<small>(eg. example@gmail.com)</small>';
 msgError1.style.color = 'grey';
