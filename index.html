@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <title>Sign Up</title>
+    <style>
+      .container{
+        max-width: 50%;
+      }
+      @media(max-width: 700px){
+          .container{
+          max-width: 80%;
+        }
+      }
+      h1{
+        font-weight: 600;
+        color:darkgreen;
+      }
+      .fa{
+        font-size: xx-large;
+      }
+      @media(max-width: 450px){
+        .fa{
+          font-size: large;
+        }
+      }
+      .fa-facebook-official{
+        color: #3b5998;
+      }
+      .fa-codepen , .fa-github{
+        color: #000;
+      }
+      .fa-google-plus{
+        color: #db4a39;
+      }
+      .fa-linkedin-square{
+        color:  #0e76a8;
+      }
+      .fa-twitter{
+        color: #00acee;
+      }
+      .form-control{
+        border: 2px solid #ced4da;
+      }
+      .form-control:focus{
+        box-shadow: none;
+        border: 2px solid #7ab5ca;
+      }
+      .btn{
+        font-weight: 600 !important;
+        box-shadow: none !important;
+        }
+      </style>
+</head>
+<body>
+  <h1 class="text-center mt-4">SignUp Here!</h1>
+    <form class="container mt-4" id="my-Form" autocomplete="off">
+        <div>
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="Email"  placeholder="Enter email">
+          <span id="span1"></span>
+        </div><br>
+        <div>
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="passWord" placeholder="Password" maxlength="6">
+          <span id="span2"></span>
+        </div><br>
+        
+        <center>
+          <button type="submit" class="btn btn-block btn-success" value="Submit">Submit</button>
+          <button type="reset" class="btn btn-block btn-danger" value="Reset">Reset</button>
+        </center>
+        <br><br>
+        <footer class="container-fluid text-center">
+          <a href="#"><i class="fa fa-facebook-official " aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#"><i class="fa fa-codepen " aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#"><i class="fa fa-github " aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#"><i class="fa fa-google-plus " aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#"><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+        </footer>
+
+        <br><br>
+        <h3 id="span3"></h3>
+      </form>
+      <script src="index.js"></script>
+</body>
+</html>
